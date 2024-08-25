@@ -21,9 +21,9 @@ To get started with the project, follow these steps:
     ```
 
 ## Project Structure
-routes/: Contains all the route definitions for the project.
-services/: Contains the business logic and interactions with the database.
-utils/: Contains utility functions and helpers shared across different parts of the application.
+- routes/: Contains all the route definitions for the project.
+- services/: Contains the business logic and interactions with the database.
+- utils/: Contains utility functions and helpers shared across different parts of the application.
 
 Docker Setup
 If you want to use Docker to run the application, follow these steps:
