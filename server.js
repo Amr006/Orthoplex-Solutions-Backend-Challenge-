@@ -10,7 +10,7 @@ const rateLimit = require('express-rate-limit');
 dotenv.config();
 const ApiError = require('./utils/apiError');
 const globalError = require('./middlewares/errorMiddleware');
-const dbConnection = require('./database/config');
+
 // Routes
 const mountRoutes = require('./routes/index');
 
