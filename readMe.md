@@ -56,3 +56,6 @@ Note: The password field values are hashed and will not be readable in plaintext
 - services/: Contains the business logic and interactions with the database.
 - utils/: Contains utility functions and helpers shared across different parts of the application.
 
+## Postman Collection 
+- file: "Orthoplex Solutions (Backend Challenge).postman_collection.json" 
+- import it to postman
