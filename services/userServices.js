@@ -173,7 +173,7 @@ exports.topThreeUsersByLoginFrequency = async (req, res, next) => {
         const result = await pool.query(query);
 
         res.status(200).json({
-            data: result.rows.map(user => findAllFormatter(user))
+            data: result.rows.map(user => findOneFormatter(user))
         });
     } catch (err) {
         console.error('Error fetching top 3 users by login frequency', err.stack);

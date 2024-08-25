@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "a424882d-107c-4977-9c6c-852a59c8f0f8",
+		"_postman_id": "e1efd349-7bdb-4ea6-95fc-8bfc92c89b0a",
 		"name": "Orthoplex Solutions (Backend Challenge)",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "26558607"
+		"_exporter_id": "37268838"
 	},
 	"item": [
 		{
@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"khaled\",\r\n    \"email\": \"tahmking006@gmail.com\",\r\n    \"password\": \"123123123\"\r\n}",
+							"raw": "{\r\n    \"name\": \"khaled\",\r\n    \"email\": \"amrking006@gmail.com\",\r\n    \"password\": \"123123123\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -67,7 +67,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"amrking006@gmail.com\",\r\n    \"password\": \"123123123\"\r\n}",
+							"raw": "{\r\n    \"email\": \"admin@gmail.com\",\r\n    \"password\": \"123123123\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -75,9 +75,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{Url}}/api/v1/login",
+							"raw": "{{localUrl}}/api/v1/login",
 							"host": [
-								"{{Url}}"
+								"{{localUrl}}"
 							],
 							"path": [
 								"api",
@@ -95,7 +95,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"amrking006@gmail.com\",\r\n    \"otp\": \"187711\"\r\n}",
+							"raw": "{\r\n    \"email\": \"amrking006@gmail.com\",\r\n    \"otp\": \"525406\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -103,9 +103,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{Url}}/api/v1/verifyOtp",
+							"raw": "{{localUrl}}/api/v1/verifyOtp",
 							"host": [
-								"{{Url}}"
+								"{{localUrl}}"
 							],
 							"path": [
 								"api",
@@ -127,15 +127,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{Url}}/api/v1/user/1",
+							"raw": "{{localUrl}}/api/v1/user/2",
 							"host": [
-								"{{Url}}"
+								"{{localUrl}}"
 							],
 							"path": [
 								"api",
 								"v1",
 								"user",
-								"1"
+								"2"
 							]
 						}
 					},
@@ -156,9 +156,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{Url}}/api/v1/user/3",
+							"raw": "{{localUrl}}/api/v1/user/3",
 							"host": [
-								"{{Url}}"
+								"{{localUrl}}"
 							],
 							"path": [
 								"api",
@@ -176,15 +176,15 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{Url}}/api/v1/user/3",
+							"raw": "{{localUrl}}/api/v1/user/7",
 							"host": [
-								"{{Url}}"
+								"{{localUrl}}"
 							],
 							"path": [
 								"api",
 								"v1",
 								"user",
-								"3"
+								"7"
 							]
 						}
 					},
@@ -196,9 +196,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{Url}}/api/v1/user?limit=5&page=1&verified=false&startDate=07/25/2024&endDate=08/26/2024",
+							"raw": "{{localUrl}}/api/v1/user?limit=5&page=1&email=admin@gmail",
 							"host": [
-								"{{Url}}"
+								"{{localUrl}}"
 							],
 							"path": [
 								"api",
@@ -216,26 +216,28 @@
 								},
 								{
 									"key": "name",
-									"value": "khaled",
+									"value": "admin",
 									"disabled": true
 								},
 								{
 									"key": "email",
-									"value": "tahm",
-									"disabled": true
+									"value": "admin@gmail"
 								},
 								{
 									"key": "verified",
 									"value": "false",
-									"description": "true | false"
+									"description": "true | false",
+									"disabled": true
 								},
 								{
 									"key": "startDate",
-									"value": "07/25/2024"
+									"value": "07/25/2024",
+									"disabled": true
 								},
 								{
 									"key": "endDate",
-									"value": "08/26/2024"
+									"value": "08/26/2024",
+									"disabled": true
 								}
 							]
 						}
@@ -248,9 +250,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{Url}}/api/v1/user/topThree",
+							"raw": "{{localUrl}}/api/v1/user/topThree",
 							"host": [
-								"{{Url}}"
+								"{{localUrl}}"
 							],
 							"path": [
 								"api",
@@ -268,9 +270,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{Url}}/api/v1/user/inActive?limit=5&page=1&period=month",
+							"raw": "{{localUrl}}/api/v1/user/inActive?limit=5&page=1&period=month",
 							"host": [
-								"{{Url}}"
+								"{{localUrl}}"
 							],
 							"path": [
 								"api",

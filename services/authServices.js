@@ -131,7 +131,7 @@ exports.register = asyncHandler(async (req, res, next) => {
         // Optionally, you can check if the OTP is expired or already used here
         const otpCreationTime = new Date(otpRecord.created_at);
         const currentTime = new Date();
-        const timeDifference = (currentTime - otpCreationTime) / (1000 * 60); // Difference in minutes
+        const timeDifference = (currentTime - otpCreationTime) / (1000 * 60 * 60); // Difference in minutes
 
         if (timeDifference > 60) {
             return next(new ApiError('OTP has expired', 400));
